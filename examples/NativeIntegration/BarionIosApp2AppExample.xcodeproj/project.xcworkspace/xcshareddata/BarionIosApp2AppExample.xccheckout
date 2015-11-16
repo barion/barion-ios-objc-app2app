@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AD2269FC-591E-4893-98EC-8A71C99F89BC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>881B9C67D4CC5A501200C4A167B85182CF44FA87</key>
+		<string>bitbucket.org:plezervi/barion.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BarionIosApp2AppExample/BarionIosApp2AppExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>881B9C67D4CC5A501200C4A167B85182CF44FA87</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:plezervi/barion.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>881B9C67D4CC5A501200C4A167B85182CF44FA87</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>881B9C67D4CC5A501200C4A167B85182CF44FA87</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BarionMobileIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

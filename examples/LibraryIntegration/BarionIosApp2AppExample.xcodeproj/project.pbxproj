@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50462C51BE76FBC009BFE2A /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D50462C31BE76FBC009BFE2A /* ProductTableViewCell.m */; };
+		D50462C61BE76FBC009BFE2A /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50462C41BE76FBC009BFE2A /* ProductTableViewCell.xib */; };
+		D50462CF1BE784F1009BFE2A /* bottombar.png in Resources */ = {isa = PBXBuildFile; fileRef = D50462CE1BE784F1009BFE2A /* bottombar.png */; };
+		D510977D1BFA0B64005AE0B1 /* BarionBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D510977B1BFA0B64005AE0B1 /* BarionBundle.bundle */; };
+		D510977E1BFA0B64005AE0B1 /* BarioniOSApp2AppLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D510977C1BFA0B64005AE0B1 /* BarioniOSApp2AppLibrary.a */; };
+		D546B6211BE7CF180055DC9C /* PaymentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B61C1BE7CF180055DC9C /* PaymentResultViewController.m */; };
+		D546B6221BE7CF180055DC9C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B61E1BE7CF180055DC9C /* MainViewController.m */; };
+		D59BF0671BF9E97E00DFBB07 /* include in Resources */ = {isa = PBXBuildFile; fileRef = D59BF0661BF9E97E00DFBB07 /* include */; };
+		D5C5E0CC1BE8A20500644F36 /* launchlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C5E0CB1BE8A20500644F36 /* launchlogo.png */; };
+		D5D271371B26BD6B00C492B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D271361B26BD6B00C492B9 /* main.m */; };
+		D5D2713A1B26BD6B00C492B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D271391B26BD6B00C492B9 /* AppDelegate.m */; };
+		D5D271401B26BD6B00C492B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D2713E1B26BD6B00C492B9 /* Main.storyboard */; };
+		D5D271421B26BD6B00C492B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D271411B26BD6B00C492B9 /* Images.xcassets */; };
+		D5D271451B26BD6B00C492B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D271431B26BD6B00C492B9 /* LaunchScreen.xib */; };
+		D5D271641B26CC0200C492B9 /* Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D271631B26CC0200C492B9 /* Parameters.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D50462C21BE76FBC009BFE2A /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductTableViewCell.h; path = UI/ProductTableViewCell.h; sourceTree = "<group>"; };
+		D50462C31BE76FBC009BFE2A /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductTableViewCell.m; path = UI/ProductTableViewCell.m; sourceTree = "<group>"; };
+		D50462C41BE76FBC009BFE2A /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductTableViewCell.xib; path = UI/ProductTableViewCell.xib; sourceTree = "<group>"; };
+		D50462CE1BE784F1009BFE2A /* bottombar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottombar.png; sourceTree = "<group>"; };
+		D510977B1BFA0B64005AE0B1 /* BarionBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BarionBundle.bundle; sourceTree = "<group>"; };
+		D510977C1BFA0B64005AE0B1 /* BarioniOSApp2AppLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = BarioniOSApp2AppLibrary.a; sourceTree = "<group>"; };
+		D52BA0601BE7A6DF00033534 /* BarionIosApp2AppExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BarionIosApp2AppExample.entitlements; sourceTree = "<group>"; };
+		D546B61B1BE7CF180055DC9C /* PaymentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentResultViewController.h; path = ViewControllers/PaymentResultViewController.h; sourceTree = "<group>"; };
+		D546B61C1BE7CF180055DC9C /* PaymentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentResultViewController.m; path = ViewControllers/PaymentResultViewController.m; sourceTree = "<group>"; };
+		D546B61D1BE7CF180055DC9C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		D546B61E1BE7CF180055DC9C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		D59BF0661BF9E97E00DFBB07 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		D5C5E0CB1BE8A20500644F36 /* launchlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchlogo.png; sourceTree = "<group>"; };
+		D5D271311B26BD6B00C492B9 /* BarionIosApp2AppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarionIosApp2AppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D271351B26BD6B00C492B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D271361B26BD6B00C492B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5D271381B26BD6B00C492B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5D271391B26BD6B00C492B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5D2713F1B26BD6B00C492B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5D271411B26BD6B00C492B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5D271441B26BD6B00C492B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D5D271621B26CC0200C492B9 /* Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameters.h; sourceTree = "<group>"; };
+		D5D271631B26CC0200C492B9 /* Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameters.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5D2712E1B26BD6B00C492B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D510977E1BFA0B64005AE0B1 /* BarioniOSApp2AppLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D50462C11BE76F47009BFE2A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D50462C21BE76FBC009BFE2A /* ProductTableViewCell.h */,
+				D50462C31BE76FBC009BFE2A /* ProductTableViewCell.m */,
+				D50462C41BE76FBC009BFE2A /* ProductTableViewCell.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D546B61A1BE7CF030055DC9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D546B61D1BE7CF180055DC9C /* MainViewController.h */,
+				D546B61E1BE7CF180055DC9C /* MainViewController.m */,
+				D546B61B1BE7CF180055DC9C /* PaymentResultViewController.h */,
+				D546B61C1BE7CF180055DC9C /* PaymentResultViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D5D271281B26BD6B00C492B9 = {
+			isa = PBXGroup;
+			children = (
+				D5D271331B26BD6B00C492B9 /* BarionIosApp2AppExample */,
+				D5D271321B26BD6B00C492B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5D271321B26BD6B00C492B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5D271311B26BD6B00C492B9 /* BarionIosApp2AppExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5D271331B26BD6B00C492B9 /* BarionIosApp2AppExample */ = {
+			isa = PBXGroup;
+			children = (
+				D59BF0661BF9E97E00DFBB07 /* include */,
+				D52BA0601BE7A6DF00033534 /* BarionIosApp2AppExample.entitlements */,
+				D50462C11BE76F47009BFE2A /* UI */,
+				D546B61A1BE7CF030055DC9C /* ViewControllers */,
+				D5D271381B26BD6B00C492B9 /* AppDelegate.h */,
+				D5D271391B26BD6B00C492B9 /* AppDelegate.m */,
+				D5D271621B26CC0200C492B9 /* Parameters.h */,
+				D5D271631B26CC0200C492B9 /* Parameters.m */,
+				D50462CE1BE784F1009BFE2A /* bottombar.png */,
+				D5C5E0CB1BE8A20500644F36 /* launchlogo.png */,
+				D5D271431B26BD6B00C492B9 /* LaunchScreen.xib */,
+				D5D2713E1B26BD6B00C492B9 /* Main.storyboard */,
+				D5D271411B26BD6B00C492B9 /* Images.xcassets */,
+				D5D271341B26BD6B00C492B9 /* Supporting Files */,
+			);
+			path = BarionIosApp2AppExample;
+			sourceTree = "<group>";
+		};
+		D5D271341B26BD6B00C492B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D510977B1BFA0B64005AE0B1 /* BarionBundle.bundle */,
+				D510977C1BFA0B64005AE0B1 /* BarioniOSApp2AppLibrary.a */,
+				D5D271351B26BD6B00C492B9 /* Info.plist */,
+				D5D271361B26BD6B00C492B9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5D271301B26BD6B00C492B9 /* BarionIosApp2AppExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D271541B26BD6B00C492B9 /* Build configuration list for PBXNativeTarget "BarionIosApp2AppExample" */;
+			buildPhases = (
+				D5D2712D1B26BD6B00C492B9 /* Sources */,
+				D5D2712E1B26BD6B00C492B9 /* Frameworks */,
+				D5D2712F1B26BD6B00C492B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarionIosApp2AppExample;
+			productName = BarionIosApp2AppExample;
+			productReference = D5D271311B26BD6B00C492B9 /* BarionIosApp2AppExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5D271291B26BD6B00C492B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Sense/Net;
+				TargetAttributes = {
+					D5D271301B26BD6B00C492B9 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = L7LAMSGWAK;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D5D2712C1B26BD6B00C492B9 /* Build configuration list for PBXProject "BarionIosApp2AppExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5D271281B26BD6B00C492B9;
+			productRefGroup = D5D271321B26BD6B00C492B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5D271301B26BD6B00C492B9 /* BarionIosApp2AppExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5D2712F1B26BD6B00C492B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D510977D1BFA0B64005AE0B1 /* BarionBundle.bundle in Resources */,
+				D5D271401B26BD6B00C492B9 /* Main.storyboard in Resources */,
+				D5C5E0CC1BE8A20500644F36 /* launchlogo.png in Resources */,
+				D50462C61BE76FBC009BFE2A /* ProductTableViewCell.xib in Resources */,
+				D59BF0671BF9E97E00DFBB07 /* include in Resources */,
+				D5D271451B26BD6B00C492B9 /* LaunchScreen.xib in Resources */,
+				D50462CF1BE784F1009BFE2A /* bottombar.png in Resources */,
+				D5D271421B26BD6B00C492B9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5D2712D1B26BD6B00C492B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50462C51BE76FBC009BFE2A /* ProductTableViewCell.m in Sources */,
+				D546B6211BE7CF180055DC9C /* PaymentResultViewController.m in Sources */,
+				D5D2713A1B26BD6B00C492B9 /* AppDelegate.m in Sources */,
+				D546B6221BE7CF180055DC9C /* MainViewController.m in Sources */,
+				D5D271371B26BD6B00C492B9 /* main.m in Sources */,
+				D5D271641B26CC0200C492B9 /* Parameters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5D2713E1B26BD6B00C492B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5D2713F1B26BD6B00C492B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5D271431B26BD6B00C492B9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5D271441B26BD6B00C492B9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5D271521B26BD6B00C492B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5D271531B26BD6B00C492B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5D271551B26BD6B00C492B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BarionIosApp2AppExample",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D5D271561B26BD6B00C492B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BarionIosApp2AppExample",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5D2712C1B26BD6B00C492B9 /* Build configuration list for PBXProject "BarionIosApp2AppExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D271521B26BD6B00C492B9 /* Debug */,
+				D5D271531B26BD6B00C492B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D271541B26BD6B00C492B9 /* Build configuration list for PBXNativeTarget "BarionIosApp2AppExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D271551B26BD6B00C492B9 /* Debug */,
+				D5D271561B26BD6B00C492B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5D271291B26BD6B00C492B9 /* Project object */;
+}
