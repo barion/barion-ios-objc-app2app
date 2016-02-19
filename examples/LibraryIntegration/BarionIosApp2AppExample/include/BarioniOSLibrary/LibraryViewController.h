@@ -13,6 +13,7 @@
 #import "GetPaymentStateConnectionHandler.h"
 #import "BarionGetPaymentStateResponse.h"
 #import "BarionError.h"
+#import "Barion.h"
 
 @protocol BarionLibraryDelegate <NSObject>
 

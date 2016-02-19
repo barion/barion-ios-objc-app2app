@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LibraryAppDelegate.h"
 
 @protocol BaseConnectionHandlerDelegate <NSObject, NSURLSessionDelegate>
 
