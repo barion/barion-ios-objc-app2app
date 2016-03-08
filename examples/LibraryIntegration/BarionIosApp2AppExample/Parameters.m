@@ -54,6 +54,10 @@
     return [Parameters throwExceptionOrReturnString: posKey];
 }
 
++ (BOOL)debugMode{
+    return YES;
+}
+
 + (NSString*)throwExceptionOrReturnString:(NSString*)stringResult
 {
     if(stringResult.length == 0 || [stringResult rangeOfString: @"your-domain"].location != NSNotFound) @throw [[NSException alloc] initWithName: @"MissingParametersException" reason: @"You have to fill all the variables in the Parameters class to use this application!" userInfo: nil];

@@ -16,6 +16,7 @@
 
 #import "PaymentResultViewController.h"
 #import "Parameters.h"
+#import "AppDelegate.h"
 #import "../include/BarioniOSLibrary/LibraryViewController.h"
 
 @implementation PaymentResultViewController
@@ -24,10 +25,16 @@
     [super viewDidLoad];
     
     self.title = @"Barion Smart Books";
-
-    [LibraryViewController getPaymentStateWithUrl: _url withPOSKey: [Parameters posKey] inDebugMode: YES andWithCallback:^(NSDictionary* response){
-        [self processBarionResponse: response];
-    }];
+    
+    if (self.url != nil) {
+        [LibraryViewController getPaymentStateWithUrl:self.url withPOSKey:[Parameters posKey] inDebugMode:[Parameters debugMode] andWithCallback:^(NSDictionary* response){
+            [self processBarionResponse: response];
+        }];
+    } else if (self.paymentId != nil){
+        [LibraryViewController getPaymentStateWithPaymentId:self.paymentId  withPOSKey: [Parameters posKey] inDebugMode: [Parameters debugMode] andWithCallback:^(NSDictionary* response){
+            [self processBarionResponse: response];
+        }];
+    }
 }
 
 - (void)processBarionResponse:(NSDictionary*)response

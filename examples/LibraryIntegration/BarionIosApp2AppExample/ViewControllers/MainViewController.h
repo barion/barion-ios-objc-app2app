@@ -20,7 +20,6 @@
 @interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, BarionLibraryDelegate>
 {
     NSArray* _products;
-    LibraryViewController* _libraryViewController;
 }
 
 - (IBAction)payWithBarion:(id)sender;

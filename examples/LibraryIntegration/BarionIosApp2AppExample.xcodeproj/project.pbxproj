@@ -19,9 +19,9 @@
 		D5D271421B26BD6B00C492B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D271411B26BD6B00C492B9 /* Images.xcassets */; };
 		D5D271451B26BD6B00C492B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D271431B26BD6B00C492B9 /* LaunchScreen.xib */; };
 		D5D271641B26CC0200C492B9 /* Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D271631B26CC0200C492B9 /* Parameters.m */; };
-		FD95FC721C76FC0000FD94D5 /* BarionBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD95FC701C76FC0000FD94D5 /* BarionBundle.bundle */; };
-		FD95FC731C76FC0000FD94D5 /* libBarioniOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD95FC711C76FC0000FD94D5 /* libBarioniOSLibrary.a */; };
-		FD95FC751C76FC0A00FD94D5 /* include in Resources */ = {isa = PBXBuildFile; fileRef = FD95FC741C76FC0A00FD94D5 /* include */; };
+		FD8166391C8EB42B00FE6E89 /* libBarioniOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */; };
+		FD81663B1C8EB43000FE6E89 /* include in Resources */ = {isa = PBXBuildFile; fileRef = FD81663A1C8EB43000FE6E89 /* include */; };
+		FD81663D1C8EB43500FE6E89 /* BarionBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		D5D271441B26BD6B00C492B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D5D271621B26CC0200C492B9 /* Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameters.h; sourceTree = "<group>"; };
 		D5D271631B26CC0200C492B9 /* Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameters.m; sourceTree = "<group>"; };
-		FD95FC701C76FC0000FD94D5 /* BarionBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BarionBundle.bundle; sourceTree = "<group>"; };
-		FD95FC711C76FC0000FD94D5 /* libBarioniOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBarioniOSLibrary.a; sourceTree = "<group>"; };
-		FD95FC741C76FC0A00FD94D5 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBarioniOSLibrary.a; sourceTree = "<group>"; };
+		FD81663A1C8EB43000FE6E89 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BarionBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD95FC731C76FC0000FD94D5 /* libBarioniOSLibrary.a in Frameworks */,
+				FD8166391C8EB42B00FE6E89 /* libBarioniOSLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 		D5D271331B26BD6B00C492B9 /* BarionIosApp2AppExample */ = {
 			isa = PBXGroup;
 			children = (
-				FD95FC741C76FC0A00FD94D5 /* include */,
+				FD81663A1C8EB43000FE6E89 /* include */,
 				D52BA0601BE7A6DF00033534 /* BarionIosApp2AppExample.entitlements */,
 				D50462C11BE76F47009BFE2A /* UI */,
 				D546B61A1BE7CF030055DC9C /* ViewControllers */,
@@ -123,8 +123,8 @@
 		D5D271341B26BD6B00C492B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD95FC701C76FC0000FD94D5 /* BarionBundle.bundle */,
-				FD95FC711C76FC0000FD94D5 /* libBarioniOSLibrary.a */,
+				FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */,
+				FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */,
 				D5D271351B26BD6B00C492B9 /* Info.plist */,
 				D5D271361B26BD6B00C492B9 /* main.m */,
 			);
@@ -162,7 +162,7 @@
 				TargetAttributes = {
 					D5D271301B26BD6B00C492B9 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 9X6W6Y7TG5;
+						DevelopmentTeam = L7LAMSGWAK;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;
@@ -194,12 +194,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD81663D1C8EB43500FE6E89 /* BarionBundle.bundle in Resources */,
 				D5D271401B26BD6B00C492B9 /* Main.storyboard in Resources */,
+				FD81663B1C8EB43000FE6E89 /* include in Resources */,
 				D5C5E0CC1BE8A20500644F36 /* launchlogo.png in Resources */,
 				D50462C61BE76FBC009BFE2A /* ProductTableViewCell.xib in Resources */,
-				FD95FC751C76FC0A00FD94D5 /* include in Resources */,
 				D5D271451B26BD6B00C492B9 /* LaunchScreen.xib in Resources */,
-				FD95FC721C76FC0000FD94D5 /* BarionBundle.bundle in Resources */,
 				D50462CF1BE784F1009BFE2A /* bottombar.png in Resources */,
 				D5D271421B26BD6B00C492B9 /* Images.xcassets in Resources */,
 			);
@@ -333,8 +333,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -345,7 +345,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4f46cc4f-d76a-4900-9300-9015ef4f8254";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,8 +354,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,7 +366,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4f46cc4f-d76a-4900-9300-9015ef4f8254";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

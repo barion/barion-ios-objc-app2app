@@ -23,5 +23,6 @@
 + (NSString*)redirectUrl;
 + (NSString*)examplePayee;
 + (NSString*)posKey;
++ (BOOL)debugMode;
 
 @end

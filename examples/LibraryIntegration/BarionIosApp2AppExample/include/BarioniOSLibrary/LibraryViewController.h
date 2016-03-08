@@ -43,10 +43,9 @@ typedef void(^getBarionPaymentStateBlock)(NSDictionary *response);
 
 @property (retain, nonatomic) NSString *BaseRequest;
 
-@property (retain, nonatomic) NSURL *url;
+@property (retain, nonatomic) NSString *paymentId;
 
 +(void)getPaymentStateWithUrl:(NSURL*)url withPOSKey:(NSString*)posKey inDebugMode:(BOOL)mode andWithCallback:(getBarionPaymentStateBlock)callback;
--(void)getPaymentStateWithPOSKey:(NSString*)posKey andReturnedUrl:(NSURL*)url inTestMode:(BOOL)mode;
-
++(void)getPaymentStateWithPaymentId:(NSString*)paymentId withPOSKey:(NSString*)posKey inDebugMode:(BOOL)mode andWithCallback:(getBarionPaymentStateBlock)callback;
 
 @end

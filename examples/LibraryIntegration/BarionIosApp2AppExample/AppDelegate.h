@@ -15,12 +15,14 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "include/BarioniOSLibrary/LibraryViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) LibraryViewController *libraryViewController;
 
-- (void)openPaymentResultViewControllerWithUrl:(NSURL*)url;
+//- (void)openPaymentResultViewControllerWithUrl:(NSURL*)url;
 
 @end
 

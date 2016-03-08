@@ -17,6 +17,7 @@
 #import "MainViewController.h"
 #import "Parameters.h"
 #import "ProductTableViewCell.h"
+#import "AppDelegate.h"
 #import "../include/BarioniOSLibrary/PaymentSettings.h"
 #import "../include/BarioniOSLibrary/TransactionModel.h"
 #import "../include/BarioniOSLibrary/Product.h"
@@ -70,7 +71,7 @@
         settings.posKey = [Parameters posKey];
         settings.paymentTypeEnum = Immediate;
         settings.guestCheckOut = YES;
-        settings.debugMode = YES;
+        settings.debugMode = [Parameters debugMode];
         settings.locale = @"hu-HU";
         settings.fundingSourceEnum = All;
         settings.redirectUrl = [Parameters redirectUrl];
@@ -78,12 +79,12 @@
     }];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LibraryMain" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"BarionBundle" withExtension:@"bundle"]]];
-    _libraryViewController = (LibraryViewController*)[sb instantiateInitialViewController];
-    _libraryViewController.delegate = self;
-    _libraryViewController.productList = [_products mutableCopy];
-    _libraryViewController.transactionSettings = transactionSettings;
-    _libraryViewController.paymentSettings = paymentSettings;
-    [self presentViewController: _libraryViewController animated:YES completion:nil];
+     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController = (LibraryViewController*)[sb instantiateInitialViewController];
+     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.delegate = self;
+     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.productList = [_products mutableCopy];
+     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.transactionSettings = transactionSettings;
+     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.paymentSettings = paymentSettings;
+    [self presentViewController:  ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController animated:YES completion:nil];
 }
 
 -(void)barionLibraryStatus:(NSMutableDictionary *)response

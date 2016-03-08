@@ -18,6 +18,7 @@
 
 @interface PaymentResultViewController : UIViewController
 
+@property (nonatomic, retain) NSString* paymentId;
 @property (nonatomic, retain) NSURL* url;
 @property (weak, nonatomic) IBOutlet UILabel* statusLabel;
 @property (weak, nonatomic) IBOutlet UILabel* statusDescriptionLabel;

@@ -28,6 +28,5 @@ extern NSString * const MISSING_PRODUCT_UNITPRICE;
 extern NSString * const MISSING_PRODUCT_ITEMTOTAL;
 
 extern NSString * const NO_RESPONSE;
-extern NSString * const CANCELED_PAYMENT;
 
 @end

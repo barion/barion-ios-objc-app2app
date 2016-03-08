@@ -16,7 +16,6 @@
 
 #import "AppDelegate.h"
 #import "PaymentResultViewController.h"
-#import "include/BarioniOSLibrary/LibraryViewController.h"
 #import "Parameters.h"
 
 @implementation AppDelegate
@@ -28,20 +27,26 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    [self openPaymentResultViewControllerWithUrl: url];
+    [self openPaymentResultViewControllerWithPaymentId:nil orWithUrl:url];
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler {
-    NSURL *url = userActivity.webpageURL;
-    [self openPaymentResultViewControllerWithUrl: url];
-    return YES;
+-(void)applicationWillEnterForeground:(UIApplication *)application{
+    NSString *paymentId = ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.paymentId;
+    if (paymentId != nil) {
+        [LibraryViewController getPaymentStateWithPaymentId:paymentId withPOSKey:[Parameters posKey] inDebugMode:[Parameters debugMode] andWithCallback:^(NSDictionary* response){
+            NSLog(@"continue block runned");
+            [self openPaymentResultViewControllerWithPaymentId:((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.paymentId orWithUrl:nil];
+            ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController = nil;
+        }];
+    }
 }
 
-- (void)openPaymentResultViewControllerWithUrl:(NSURL*)url
+- (void)openPaymentResultViewControllerWithPaymentId:(NSString*)paymentId orWithUrl:(NSURL*)url
 {
     UIStoryboard* sb = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
     PaymentResultViewController* result = [sb instantiateViewControllerWithIdentifier:@"paymentResultViewController"];
+    result.paymentId = paymentId;
     result.url = url;
     result.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     UINavigationController* controller = (UINavigationController*)self.window.rootViewController;
