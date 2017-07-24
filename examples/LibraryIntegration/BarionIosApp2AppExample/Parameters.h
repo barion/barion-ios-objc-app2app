@@ -18,8 +18,6 @@
 
 @interface Parameters : NSObject
 
-+ (NSString*)startBarionPaymentUrl;
-+ (NSString*)getBarionPaymentStateUrl;
 + (NSString*)redirectUrl;
 + (NSString*)examplePayee;
 + (NSString*)posKey;

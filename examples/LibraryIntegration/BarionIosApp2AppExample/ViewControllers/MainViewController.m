@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
     
     self.title = @"Barion Smart Books";    
     
@@ -73,22 +74,32 @@
         settings.guestCheckOut = YES;
         settings.debugMode = [Parameters debugMode];
         settings.locale = @"hu-HU";
+#warning Currently the Barion mobile application supports only HUF currency!
+        settings.currency = @"HUF";
         settings.fundingSourceEnum = All;
         settings.redirectUrl = [Parameters redirectUrl];
         settings.redirectUrliOS9 = [Parameters redirectUrl];
     }];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LibraryMain" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"BarionBundle" withExtension:@"bundle"]]];
-     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController = (LibraryViewController*)[sb instantiateInitialViewController];
-     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.delegate = self;
-     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.productList = [_products mutableCopy];
-     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.transactionSettings = transactionSettings;
-     ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController.paymentSettings = paymentSettings;
-    [self presentViewController:  ((AppDelegate*)[UIApplication sharedApplication].delegate).libraryViewController animated:YES completion:nil];
+     appDelegate.libraryViewController = (LibraryViewController*)[sb instantiateInitialViewController];
+     appDelegate.libraryViewController.delegate = self;
+     appDelegate.libraryViewController.productList = [_products mutableCopy];
+     appDelegate.libraryViewController.transactionSettings = transactionSettings;
+     appDelegate.libraryViewController.paymentSettings = paymentSettings;
+    [self presentViewController: appDelegate.libraryViewController animated:YES completion:nil];
 }
 
 -(void)barionLibraryStatus:(NSMutableDictionary *)response
 {
+    NSLog(@"response: %@", response);
+}
+
+/*
+ You can catch the response of the v2/Payment/Start endpoint.
+ */
+-(void)startPaymentResponse:(id)startPaymentResponse{
+    appDelegate.libraryViewController.paymentId = ((BarionStartPaymentResponse*)startPaymentResponse).paymentId;
 }
 
 - (NSArray*)getProducts

@@ -19,9 +19,9 @@
 		D5D271421B26BD6B00C492B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D271411B26BD6B00C492B9 /* Images.xcassets */; };
 		D5D271451B26BD6B00C492B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D271431B26BD6B00C492B9 /* LaunchScreen.xib */; };
 		D5D271641B26CC0200C492B9 /* Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D271631B26CC0200C492B9 /* Parameters.m */; };
-		FD8166391C8EB42B00FE6E89 /* libBarioniOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */; };
 		FD81663B1C8EB43000FE6E89 /* include in Resources */ = {isa = PBXBuildFile; fileRef = FD81663A1C8EB43000FE6E89 /* include */; };
 		FD81663D1C8EB43500FE6E89 /* BarionBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */; };
+		FDCAB9051F25B0780020202F /* BarioniOSApp2AppLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCAB9041F25B0780020202F /* BarioniOSApp2AppLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		D5D271441B26BD6B00C492B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D5D271621B26CC0200C492B9 /* Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameters.h; sourceTree = "<group>"; };
 		D5D271631B26CC0200C492B9 /* Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameters.m; sourceTree = "<group>"; };
-		FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBarioniOSLibrary.a; sourceTree = "<group>"; };
 		FD81663A1C8EB43000FE6E89 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 		FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BarionBundle.bundle; sourceTree = "<group>"; };
+		FDCAB9041F25B0780020202F /* BarioniOSApp2AppLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = BarioniOSApp2AppLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8166391C8EB42B00FE6E89 /* libBarioniOSLibrary.a in Frameworks */,
+				FDCAB9051F25B0780020202F /* BarioniOSApp2AppLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +102,7 @@
 		D5D271331B26BD6B00C492B9 /* BarionIosApp2AppExample */ = {
 			isa = PBXGroup;
 			children = (
+				FDCAB9041F25B0780020202F /* BarioniOSApp2AppLibrary.a */,
 				FD81663A1C8EB43000FE6E89 /* include */,
 				D52BA0601BE7A6DF00033534 /* BarionIosApp2AppExample.entitlements */,
 				D50462C11BE76F47009BFE2A /* UI */,
@@ -124,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				FD81663C1C8EB43500FE6E89 /* BarionBundle.bundle */,
-				FD8166381C8EB42B00FE6E89 /* libBarioniOSLibrary.a */,
 				D5D271351B26BD6B00C492B9 /* Info.plist */,
 				D5D271361B26BD6B00C492B9 /* main.m */,
 			);
@@ -281,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -320,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,8 +335,9 @@
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L7LAMSGWAK;
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,8 +357,9 @@
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L7LAMSGWAK;
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,10 +16,12 @@
 
 #import <UIKit/UIKit.h>
 #import "../include/BarioniOSLibrary/LibraryViewController.h"
+#import "AppDelegate.h"
 
 @interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, BarionLibraryDelegate>
 {
     NSArray* _products;
+    AppDelegate *appDelegate;
 }
 
 - (IBAction)payWithBarion:(id)sender;

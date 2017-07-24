@@ -19,18 +19,6 @@
 
 @implementation Parameters
 
-+ (NSString*)startBarionPaymentUrl
-{
-    NSString* url = @"http://your-domain.com/generate_barion_payment.php";
-    return [Parameters throwExceptionOrReturnString: url];
-}
-
-+ (NSString*)getBarionPaymentStateUrl
-{
-    NSString* url = @"http://your-domain.com/get_barion_payment_state.php?PaymentId=";
-    return [Parameters throwExceptionOrReturnString: url];
-}
-
 + (NSString*)redirectUrl
 {
     NSString* url;
@@ -44,7 +32,7 @@
 
 + (NSString*)examplePayee
 {
-    NSString* payee = @"testuser@your-domain.com";
+    NSString* payee = @"example@payee.com";
     return [Parameters throwExceptionOrReturnString: payee];
 }
 
@@ -55,7 +43,7 @@
 }
 
 + (BOOL)debugMode{
-    return YES;
+    return NO;
 }
 
 + (NSString*)throwExceptionOrReturnString:(NSString*)stringResult

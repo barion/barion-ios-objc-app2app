@@ -50,10 +50,7 @@
     result.url = url;
     result.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     UINavigationController* controller = (UINavigationController*)self.window.rootViewController;
-    [[controller presentedViewController] dismissViewControllerAnimated: YES completion:^{
-        [controller setViewControllers: [NSArray arrayWithObject: result]];
-    }];
-
+    [controller presentViewController:result animated:YES completion:nil];
 }
 
 @end
