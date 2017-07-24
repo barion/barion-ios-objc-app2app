@@ -43,7 +43,7 @@
 }
 
 + (BOOL)debugMode{
-    return NO;
+    return YES;
 }
 
 + (NSString*)throwExceptionOrReturnString:(NSString*)stringResult
