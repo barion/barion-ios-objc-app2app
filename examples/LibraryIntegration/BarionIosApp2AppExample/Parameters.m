@@ -23,22 +23,22 @@
 {
     NSString* url;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] < 9) {
-        url = @"your-domain://";
+        url = @"asd://";
     } else {
-        url = @"https://your-domain.com/barion";
+        url = @"https://asd.com/barion";
     }
     return [Parameters throwExceptionOrReturnString: url];
 }
 
 + (NSString*)examplePayee
 {
-    NSString* payee = @"example@payee.com";
+    NSString* payee = @"testshop@barion.com";
     return [Parameters throwExceptionOrReturnString: payee];
 }
 
 + (NSString*)posKey
 {
-    NSString* posKey = @"";
+    NSString* posKey = @"ec5abfa2-5eea-42db-9568-b9a4cf825b88";
     return [Parameters throwExceptionOrReturnString: posKey];
 }
 

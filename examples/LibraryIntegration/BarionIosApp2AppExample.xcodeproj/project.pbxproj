@@ -162,7 +162,8 @@
 				TargetAttributes = {
 					D5D271301B26BD6B00C492B9 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = L7LAMSGWAK;
+						DevelopmentTeam = MJZ8XNV2N3;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;
@@ -335,7 +336,8 @@
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = L7LAMSGWAK;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJZ8XNV2N3;
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -344,9 +346,10 @@
 					"$(PROJECT_DIR)/BarionIosApp2AppExample",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
+				PRODUCT_BUNDLE_IDENTIFIER = barion.app2app.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -357,7 +360,8 @@
 				CODE_SIGN_ENTITLEMENTS = BarionIosApp2AppExample/BarionIosApp2AppExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = L7LAMSGWAK;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJZ8XNV2N3;
 				INFOPLIST_FILE = BarionIosApp2AppExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,9 +370,10 @@
 					"$(PROJECT_DIR)/BarionIosApp2AppExample",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Barion.App2AppExample;
+				PRODUCT_BUNDLE_IDENTIFIER = barion.app2app.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
