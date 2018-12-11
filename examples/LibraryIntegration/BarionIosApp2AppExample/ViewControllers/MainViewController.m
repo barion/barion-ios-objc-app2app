@@ -74,7 +74,6 @@
         settings.guestCheckOut = YES;
         settings.debugMode = [Parameters debugMode];
         settings.locale = @"hu-HU";
-#warning Currently the Barion mobile application supports only HUF currency!
         settings.currency = @"HUF";
         settings.initiateRecurrence = NO;
         settings.recurrenceId = @"asd123";
